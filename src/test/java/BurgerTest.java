@@ -17,7 +17,8 @@ public class BurgerTest {
     private final List<Bun> buns = new ArrayList<>();
     private final List<Ingredient> ingredients = new ArrayList<>();
     Burger burger = new Burger();
-    private Ingredient ingredient;
+    private Ingredient ingredient = new Ingredient(SAUCE,"Bun",100);
+
     @Test
     public void addIngredientTest() {
         burger.addIngredient(ingredient);
